@@ -36,6 +36,7 @@ public class CharacterControllerMovement : MonoBehaviour
         warpTarget = newWarpTarget;
         oldWarpOrigin = warpOrigin;
         warpOrigin = newWarpOrigin;
+        newWarpTarget.gameObject.GetComponent<WarpPad>().isWarpable = false;
     }
 
     void Update()
